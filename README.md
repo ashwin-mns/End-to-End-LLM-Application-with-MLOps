@@ -137,10 +137,4 @@ Once the account is active, the following results are expected:
 
 <img width="1919" height="862" alt="Screenshot 2026-02-06 180840" src="https://github.com/user-attachments/assets/dcee5f38-1417-4724-b97a-f6c9759fa94d" />
 
-
-
-
-
-
-
-
+<img width="1905" height="856" alt="Screenshot 2026-02-06 184636" src="https://github.com/user-attachments/assets/b6f2de49-3d71-421c-b0c3-f648b77d5021" />

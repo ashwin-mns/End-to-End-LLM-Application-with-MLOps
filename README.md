@@ -71,13 +71,26 @@ graph TD
    ```
    Visit `http://localhost:5000` to view experiments.
 
-## ☁️ Deployment to AWS SageMaker
+## ☁️ Deployment to AWS SageMaker (Status: Pending Verification)
 
-1.  **Configure AWS Credentials**:
+> **Note**: The deployment scripts are ready, but actual deployment is currently paused pending AWS Account Identity Verification.
+
+### Deployment Preview
+Once the account is active, the following results are expected:
+
+**1. Terminal Output Success:**
+![Terminal Success](docs/images/terminal_success.png)
+
+**2. AWS SageMaker Console (Active Endpoint):**
+![SageMaker Console](docs/images/aws_sagemaker.png)
+
+### Steps to Finalize Deployment
+1.  **Complete AWS Registration**: Verify phone number and payment method on AWS Console.
+2.  **Configure AWS Credentials**:
     ```bash
     aws configure
     ```
-2.  **Build and Push Docker Image**:
+3.  **Build and Push Docker Image**:
     ```bash
     # Login to ECR
     aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <YOUR_AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com
@@ -89,7 +102,7 @@ graph TD
     # Push
     docker push <YOUR_AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/llm-app:latest
     ```
-3.  **Deploy**:
+4.  **Deploy**:
     ```bash
     python deploy.py
     ```
@@ -115,3 +128,4 @@ graph TD
 ---
 **Author**: Ashwin
 **Goal**: Mastery of End-to-End MLOps for LLMs.
+

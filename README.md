@@ -129,3 +129,14 @@ Once the account is active, the following results are expected:
 **Author**: Ashwin
 **Goal**: Mastery of End-to-End MLOps for LLMs.
 
+<img width="1919" height="864" alt="Screenshot 2026-02-06 153202" src="https://github.com/user-attachments/assets/72ff040c-c900-490e-b19a-8da1de6967ec" />
+
+<img width="1919" height="916" alt="Screenshot 2026-02-06 153238" src="https://github.com/user-attachments/assets/8db35443-42e3-4d45-9892-20710c616735" />
+
+<img width="1893" height="866" alt="Screenshot 2026-02-06 153309" src="https://github.com/user-attachments/assets/b2b6f70c-e6f6-4e2a-9c9d-491093f70035" />
+
+
+
+
+
+

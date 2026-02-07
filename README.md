@@ -101,6 +101,13 @@ graph TD
    ```
    Visit `http://localhost:5000` to view experiments.
 
+   ## 🐳 Why Docker?
+In a professional MLOps pipeline, Docker is essential for several reasons:
+-   **Environment Consistency**: It ensures the app runs the same on your laptop, a colleague's machine, or in the AWS cloud by "packaging" the OS, Python, and libraries together.
+-   **Dependency Isolation**: LLMs require heavy libraries (like PyTorch and Transformers). Docker prevents version conflicts with other projects on your computer.
+-   **Seamless Deployment**: AWS SageMaker uses Docker containers to serve models. Having a local Dockerfile makes moving from development to production trivial.
+-   **Scalability**: Containers can be spun up or down in seconds to handle varying amounts of user traffic.
+
 ## ☁️ Deployment to AWS SageMaker (Status: Pending Verification)
 
 > **Note**: The deployment scripts are ready, but actual deployment is currently paused pending AWS Account Identity Verification.

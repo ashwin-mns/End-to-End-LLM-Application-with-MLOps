@@ -12,6 +12,36 @@ We are building a production-grade **LLM Application** that demonstrates the ful
 - **Monitoring**: Real-time performance monitoring.
 
 ---
+## 🌟 Core Architecture
+The system is built on three main pillars:
+1.  **FastAPI Inference Service**: A high-performance REST API that serves a language model (e.g., `distilgpt2`) for real-time text generation.
+2.  **MLflow Tracking Dashboard**: Every request is logged as an "experiment run," tracking parameters (like `max_length`), metrics (like `latency`), and model versions for full observability.
+3.  **Scalable Infrastructure**: The app is **Dockerized** for consistency and prepared for deployment to **AWS SageMaker** via automated CI/CD pipelines.
+
+## 🛠️ Key Components & Features
+- **Interactive API Docs**: Automatic Swagger UI at `http://127.0.0.1:5000/docs`.
+- **In-Depth Tracking**: MLflow UI at `http://127.0.0.1:5001` to monitor latency and model behavior.
+- **Advanced User Management**: Includes expanded profile fields (First Name, Last Name, DOB, Phone) and a secure password recovery flow with OTP.
+- **One-Click Execution**: A `run.bat` script that handles environment checks and launches both servers concurrently.
+
+## 🎯 How It Works
+1.  **Request**: A user sends a prompt to the FastAPI `/generate` endpoint.
+2.  **Inference**: The model generates text while MLflow logs the performance metrics.
+3.  **Response**: The system returns the generated text and immediately updates the tracking dashboard.
+
+## 🚀 Quick Start
+To run the entire suite on your local machine:
+1.  Open a terminal in the project root.
+2.  Execute the startup script:
+    ```bash
+    .\run.bat
+    ```
+3.  Access the API at `http://127.0.0.1:5000/docs` and MLflow at `http://127.0.0.1:5001`.
+
+---
+**Goal**: Mastery of End-to-End MLOps for LLMs.
+**Developer**: Ashwin
+
 
 ## 🏗️ System Architecture
 

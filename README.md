@@ -64,11 +64,15 @@ Since this project uses heavy AI models, here are the verification results:
 
 ### 1. LLM Inference API (FastAPI)
 Status: **Active**
-![FastAPI Swagger UI](docs/images/api_success.png)
+
+<img width="1918" height="868" alt="Screenshot 2026-02-07 215504" src="https://github.com/user-attachments/assets/928c5c58-7efe-49c9-85fc-ddcff1a007b4" />
+<img width="1898" height="868" alt="Screenshot 2026-02-07 215435" src="https://github.com/user-attachments/assets/324a264c-0842-4b5f-a026-29593ffcf3ca" />
+<img width="1897" height="869" alt="Screenshot 2026-02-07 215401" src="https://github.com/user-attachments/assets/921abc85-ecb6-4503-81ee-4f150ef809b0" />
 
 ### 2. Experiment Tracking (MLflow)
 Status: **Tracking Experiments**
-![MLflow Dashboard](docs/images/mlflow_dashboard.png)
+<img width="1919" height="867" alt="Screenshot 2026-02-07 215317" src="https://github.com/user-attachments/assets/93bf55c8-ba4a-4ab4-967b-2fcef5115f3a" />
+
 
 ### Running Locally (Optional)
 1. **Start the API**
@@ -140,3 +144,4 @@ Once the account is active, the following results are expected:
 ---
 **Author**: Ashwin
 **Goal**: Mastery of End-to-End MLOps for LLMs.
+

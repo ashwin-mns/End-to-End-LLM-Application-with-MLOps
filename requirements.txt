@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+mlflow
+boto3
+sagemaker
+transformers
+torch
+python-dotenv
+requests
+pandas
+numpy
+scikit-learn
+pydantic
+sentencepiece

@@ -12,36 +12,6 @@ We are building a production-grade **LLM Application** that demonstrates the ful
 - **Monitoring**: Real-time performance monitoring.
 
 ---
-## 🌟 Core Architecture
-The system is built on three main pillars:
-1.  **FastAPI Inference Service**: A high-performance REST API that serves a language model (e.g., `distilgpt2`) for real-time text generation.
-2.  **MLflow Tracking Dashboard**: Every request is logged as an "experiment run," tracking parameters (like `max_length`), metrics (like `latency`), and model versions for full observability.
-3.  **Scalable Infrastructure**: The app is **Dockerized** for consistency and prepared for deployment to **AWS SageMaker** via automated CI/CD pipelines.
-
-## 🛠️ Key Components & Features
-- **Interactive API Docs**: Automatic Swagger UI at `http://127.0.0.1:5000/docs`.
-- **In-Depth Tracking**: MLflow UI at `http://127.0.0.1:5001` to monitor latency and model behavior.
-- **Advanced User Management**: Includes expanded profile fields (First Name, Last Name, DOB, Phone) and a secure password recovery flow with OTP.
-- **One-Click Execution**: A `run.bat` script that handles environment checks and launches both servers concurrently.
-
-## 🎯 How It Works
-1.  **Request**: A user sends a prompt to the FastAPI `/generate` endpoint.
-2.  **Inference**: The model generates text while MLflow logs the performance metrics.
-3.  **Response**: The system returns the generated text and immediately updates the tracking dashboard.
-
-## 🚀 Quick Start
-To run the entire suite on your local machine:
-1.  Open a terminal in the project root.
-2.  Execute the startup script:
-    ```bash
-    .\run.bat
-    ```
-3.  Access the API at `http://127.0.0.1:5000/docs` and MLflow at `http://127.0.0.1:5001`.
-
----
-**Goal**: Mastery of End-to-End MLOps for LLMs.
-**Developer**: Ashwin
-
 
 ## 🏗️ System Architecture
 
@@ -88,7 +58,19 @@ graph TD
    pip install -r requirements.txt
    ```
 
-### Running Locally
+## 📸 Project Verification (Screenshots)
+
+Since this project uses heavy AI models, here are the verification results:
+
+### 1. LLM Inference API (FastAPI)
+Status: **Active**
+![FastAPI Swagger UI](docs/images/api_success.png)
+
+### 2. Experiment Tracking (MLflow)
+Status: **Tracking Experiments**
+![MLflow Dashboard](docs/images/mlflow_dashboard.png)
+
+### Running Locally (Optional)
 1. **Start the API**
    ```bash
    uvicorn app.main:app --reload
@@ -100,13 +82,6 @@ graph TD
    mlflow ui
    ```
    Visit `http://localhost:5000` to view experiments.
-
-   ## 🐳 Why Docker?
-In a professional MLOps pipeline, Docker is essential for several reasons:
--   **Environment Consistency**: It ensures the app runs the same on your laptop, a colleague's machine, or in the AWS cloud by "packaging" the OS, Python, and libraries together.
--   **Dependency Isolation**: LLMs require heavy libraries (like PyTorch and Transformers). Docker prevents version conflicts with other projects on your computer.
--   **Seamless Deployment**: AWS SageMaker uses Docker containers to serve models. Having a local Dockerfile makes moving from development to production trivial.
--   **Scalability**: Containers can be spun up or down in seconds to handle varying amounts of user traffic.
 
 ## ☁️ Deployment to AWS SageMaker (Status: Pending Verification)
 
@@ -165,13 +140,3 @@ Once the account is active, the following results are expected:
 ---
 **Author**: Ashwin
 **Goal**: Mastery of End-to-End MLOps for LLMs.
-
-<img width="1919" height="864" alt="Screenshot 2026-02-06 153202" src="https://github.com/user-attachments/assets/72ff040c-c900-490e-b19a-8da1de6967ec" />
-
-<img width="1919" height="916" alt="Screenshot 2026-02-06 153238" src="https://github.com/user-attachments/assets/8db35443-42e3-4d45-9892-20710c616735" />
-
-<img width="1893" height="866" alt="Screenshot 2026-02-06 153309" src="https://github.com/user-attachments/assets/b2b6f70c-e6f6-4e2a-9c9d-491093f70035" />
-
-<img width="1919" height="862" alt="Screenshot 2026-02-06 180840" src="https://github.com/user-attachments/assets/dcee5f38-1417-4724-b97a-f6c9759fa94d" />
-
-<img width="1905" height="856" alt="Screenshot 2026-02-06 184636" src="https://github.com/user-attachments/assets/b6f2de49-3d71-421c-b0c3-f648b77d5021" />
